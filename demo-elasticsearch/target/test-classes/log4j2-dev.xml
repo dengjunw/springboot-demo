@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" monitorInterval="30">
+
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss} %-5p %X{traceId} %c{2}:%L - %m%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <ThresholdFilter level="info" onMatch="ACCEPT"
+                             onMismatch="DENY"/>
+            <PatternLayout pattern="${pattern}"/>
+            <Encoding>utf8</Encoding>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <root level="info">
+            <appender-ref ref="Console"/>
+        </root>
+    </Loggers>
+</Configuration>
