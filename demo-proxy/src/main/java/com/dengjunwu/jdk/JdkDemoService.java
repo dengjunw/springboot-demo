@@ -1,4 +1,4 @@
-package com.dengjunwu;
+package com.dengjunwu.jdk;
 
 public interface JdkDemoService {
 

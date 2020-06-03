@@ -1,4 +1,4 @@
-package com.dengjunwu;
+package com.dengjunwu.jdk;
 
 public class JdkProxyTest {
     public static void main(String[] args) {
