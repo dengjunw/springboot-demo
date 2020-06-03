@@ -1,9 +1,6 @@
 spring:
   profiles:
     active: dev
-  data:
-    elasticsearch:
-      repositories:
-        enabled: true
-      cluster-nodes: 127.0.0.1:9300
-      cluster-name: elasticsearch_dengjunwu
+  elasticsearch:
+    rest:
+      uris: http://218.92.148.180:34501
