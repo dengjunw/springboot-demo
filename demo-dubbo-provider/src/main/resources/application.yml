@@ -1,0 +1,15 @@
+server:
+  port: 7991
+
+spring:
+  profiles:
+    active: dev
+  dubbo:
+    application:
+      name: provider
+    server: true
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880

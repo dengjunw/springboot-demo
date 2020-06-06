@@ -11,6 +11,9 @@
     <modules>
         <module>demo-elasticsearch</module>
         <module>demo-proxy</module>
+        <module>demo-dubbo-provider</module>
+        <module>demo-dubbo-interface</module>
+        <module>demo-dubbo-consumer</module>
     </modules>
 
     <parent>
