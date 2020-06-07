@@ -1,6 +1,8 @@
-package com.dengjunwu;
+package com.dengjunwu.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.dengjunwu.Order;
+import com.dengjunwu.OrderService;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
