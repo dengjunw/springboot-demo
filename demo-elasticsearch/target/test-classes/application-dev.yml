@@ -1,2 +1,0 @@
-environment: dev
-logging.config: classpath:log4j2-@package.environment@.xml
