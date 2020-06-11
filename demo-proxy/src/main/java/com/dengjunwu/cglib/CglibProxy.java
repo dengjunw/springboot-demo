@@ -10,6 +10,8 @@ public class CglibProxy implements MethodInterceptor {
 
     private Object target;
 
+    public CglibProxy(){}
+
     public CglibProxy(Object target){
         this.target = target;
     }
@@ -17,6 +19,10 @@ public class CglibProxy implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         return method.invoke(this.target, objects);
+    }
+
+    public String sayHello(){
+        return "hello";
     }
 
     public static <T> T getProxy(T target){
