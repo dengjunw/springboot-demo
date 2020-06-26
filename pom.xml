@@ -16,6 +16,7 @@
         <module>demo-dubbo-consumer</module>
         <module>demo-eureka-server</module>
         <module>demo-reflect</module>
+        <module>demo-issue</module>
     </modules>
 
     <parent>

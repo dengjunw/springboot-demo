@@ -1,0 +1,24 @@
+server:
+  port: 8880
+  undertow:
+    worker-threads: 50
+    io-threads: 15
+    accesslog:
+      enabled: false
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mingmou?characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 20
+      minimum-idle: 8
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
