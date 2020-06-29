@@ -17,6 +17,7 @@
         <module>demo-eureka-server</module>
         <module>demo-reflect</module>
         <module>demo-issue</module>
+        <module>demo-sort</module>
     </modules>
 
     <parent>

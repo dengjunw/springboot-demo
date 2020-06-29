@@ -14,9 +14,19 @@ public class JdkProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        return method.invoke(this.target, args);
+        System.out.println("start...");
+        Object o =  method.invoke(this.target, args);
+        System.out.println("end...");
+        return o;
     }
 
+    /**
+     * 创建任意类的 代理类
+     * @param target            代理类
+     * @param targetInterface   代理类接口
+     * @param <T>               类型
+     * @return
+     */
     public static <T> T createProxy(Object target, Class<T> targetInterface){
         if (!targetInterface.isInterface()){
             throw new IllegalStateException("targetInterface 必须是接口类型");
